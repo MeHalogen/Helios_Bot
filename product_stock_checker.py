@@ -30,7 +30,7 @@ def check_stock():
         soup = BeautifulSoup(resp.text, "html.parser")
         text = soup.get_text(separator=" ").lower()
 
-        unavailable = ["out of stock", "sold out", "currently unavailable", "unavailable"]
+        unavailable = ["out of stock", "sold out", "currently unavailable", "unavailable", "coming soon"]
         available = ["add to cart", "buy now", "in stock"]
 
         found_available = any(p in text for p in available)
