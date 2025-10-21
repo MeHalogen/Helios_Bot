@@ -2,7 +2,7 @@ name: Product Stock Monitor (Hourly)
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Every hour (UTC)
+    - cron: "0/15 * * * *"  # Every hour (UTC)
   workflow_dispatch:      # Allows manual run
 
 jobs:
