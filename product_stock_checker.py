@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 # === CONFIG ===
-PRODUCT_URL = "https://in.amazfit.com/products/helio-strap"
+PRODUCT_URL = "https://amzn.in/d/7iEhecd"
 DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
 HEADERS = {"User-Agent": "Mozilla/5.0 (StockChecker)"}
 LAST_STATUS_FILE = "last_status.txt"
